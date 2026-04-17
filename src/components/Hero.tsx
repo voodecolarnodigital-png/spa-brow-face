@@ -62,23 +62,25 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="relative flex-1 flex justify-center items-end h-full mt-8 lg:mt-0"
+          className="relative flex-1 flex justify-center items-end mt-8 lg:mt-0"
         >
-          {/* Elegant Glowing Backdrop (Light) */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] bg-[#c9834c] rounded-full mix-blend-multiply filter blur-[100px] opacity-30 animate-pulse" style={{ animationDuration: '4s' }}></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] bg-white rounded-full filter blur-[60px] opacity-80"></div>
-          
-          {/* Subtle Ring Accents */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] border border-[#c9834c]/20 rounded-full -z-10"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] sm:w-[550px] sm:h-[550px] border border-[#c9834c]/10 rounded-full -z-10"></div>
+          <div className="relative inline-flex justify-center items-end pointer-events-none">
+            {/* Elegant Glowing Backdrop (Light) */}
+            <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] bg-[#c9834c] rounded-full mix-blend-multiply filter blur-[100px] opacity-30 animate-pulse" style={{ animationDuration: '4s' }}></div>
+            <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] bg-white rounded-full filter blur-[60px] opacity-80"></div>
+            
+            {/* Subtle Ring Accents */}
+            <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] border border-[#c9834c]/20 rounded-full -z-10"></div>
+            <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] sm:w-[550px] sm:h-[550px] border border-[#c9834c]/10 rounded-full -z-10"></div>
 
-          {/* Cutout Image with Drop Shadow */}
-          <img
-            className="relative z-20 w-full max-w-[450px] lg:max-w-[550px] object-contain object-bottom drop-shadow-[0_20px_40px_rgba(61,32,20,0.5)]"
-            src="./fabi-principal.png?v=1"
-            alt="Fabiana Lopes"
-            referrerPolicy="no-referrer"
-          />
+            {/* Cutout Image with Drop Shadow */}
+            <img
+              className="relative z-20 w-full max-w-[450px] lg:max-w-[550px] object-contain object-bottom drop-shadow-[0_20px_40px_rgba(61,32,20,0.5)] pointer-events-auto"
+              src="./fabi-principal.png?v=1"
+              alt="Fabiana Lopes"
+              referrerPolicy="no-referrer"
+            />
+          </div>
         </motion.div>
       </div>
     </section>
